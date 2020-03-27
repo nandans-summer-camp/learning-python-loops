@@ -46,6 +46,24 @@
 
 
 #
+# 5)
+# Write a function "factorial"
+# 
+# It takes a number and returns the
+# factorial of that number. 
+# 
+# The factorial of n is the product of all 
+# positive integers less than or equal to n
+#
+# HINT: use range()
+# https://docs.python.org/3/library/stdtypes.html#typesseq-range
+# 
+# range(n) produces an iterable of length n: 
+# [0,1,2,...,n-1]
+
+
+
+#
 # 6)
 # Write a function "second_highest_number"
 # that takes as input a list of numbers
@@ -56,6 +74,14 @@
 # we have learned so far! No cheating!
 #
 # HINT: You might want to write two functions!
+
+
+
+#####################################################
+# BONUS EXERCISES
+# Uncomment the commented-out tests in test_exercises.py
+# to unlock the bonus exercises.
+#####################################################
 
 
 
@@ -80,17 +106,12 @@
 # exercise? That may or may not work, depending
 # on how you implemented it. 
 #
-# HINT HINT: you can use the function "range"
-# in the Python documentation: 
-# https://docs.python.org/3/library/stdtypes.html#typesseq-range
-# to create a list of arbitrary length
-#
-# HINT HINT HINT: Don't try and be "efficient"!
+# HINT HINT: use the function "range"!
 
 
 
 #
-# 7)
+# 8)
 # Write a function "every" that
 # takes two parameters:
 # 1. a list of elements of data type E

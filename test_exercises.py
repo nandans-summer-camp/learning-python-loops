@@ -42,6 +42,11 @@ def test_longest_word():
     words = ['foo']
     assert longest_word(words) == 'foo'
 
+def test_factorial():
+    assert factorial(5) == 120
+    assert factorial(6) == 720
+    assert factorial(12) == 479001600
+
 def test_second_highest_number():
     nums = [10,5,3,8]
     assert second_highest_number(nums) == 8
@@ -50,23 +55,24 @@ def test_second_highest_number():
     assert second_highest_number(nums) == 1
 
 
-def test_n_highest_number():
-    nums = [10,5,3,8,1,2]
-    assert n_highest_number(nums, 2) == 8
-    assert n_highest_number(nums, 1) == 10
-    assert n_highest_number(nums, 3) == 5
-    assert n_highest_number(nums, 6) == 1
+# def test_n_highest_number():
+#     nums = [10,5,3,8,1,2]
+#     assert n_highest_number(nums, 2) == 8
+#     assert n_highest_number(nums, 1) == 10
+#     assert n_highest_number(nums, 3) == 5
+#     assert n_highest_number(nums, 6) == 1
 
-def test_every():
-    def is_adult(n):
-        return n >= 18
-    
-    assert every([10, 17, 30], is_adult) == False
-    assert every([35, 30], is_adult) == True
 
-    def is_long(s):
-        return len(s) > 3
+# def test_every():
+#     def is_adult(n):
+#         return n >= 18
     
-    assert every(['fo', 'foobar'], is_long) == False
-    assert every(['fooo', 'barrr'], is_long) == True
+#     assert every([10, 17, 30], is_adult) == False
+#     assert every([35, 30], is_adult) == True
+
+#     def is_long(s):
+#         return len(s) > 3
+    
+#     assert every(['fo', 'foobar'], is_long) == False
+#     assert every(['fooo', 'barrr'], is_long) == True
 
