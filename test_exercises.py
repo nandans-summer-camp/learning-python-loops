@@ -24,6 +24,10 @@ def test_are_all_adults():
     res = are_all_adults(ages)
     assert res == False
 
+    ages = [35,1,15]
+    res = are_all_adults(ages)
+    assert res == False
+
     ages = [30,35]
     res = are_all_adults(ages)
     assert res == True
@@ -66,13 +70,13 @@ def test_second_highest_number():
 # def test_every():
 #     def is_adult(n):
 #         return n >= 18
-    
+
 #     assert every([10, 17, 30], is_adult) == False
 #     assert every([35, 30], is_adult) == True
 
 #     def is_long(s):
 #         return len(s) > 3
-    
-#     assert every(['fo', 'foobar'], is_long) == False
-#     assert every(['fooo', 'barrr'], is_long) == True
 
+#     assert every(['fo', 'foobar'], is_long) == False
+#     assert every(['foooo', 'bar'], is_long) == False
+#     assert every(['fooo', 'barrr'], is_long) == True
