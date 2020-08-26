@@ -43,6 +43,9 @@ def test_longest_word():
     words = ['foo', 'foobar', 'foobarbaz']
     assert longest_word(words) == 'foobarbaz'
 
+    words = ['foo', 'foobarbaz', 'foobar']
+    assert longest_word(words) == 'foobarbaz'
+
     words = ['foo']
     assert longest_word(words) == 'foo'
 
